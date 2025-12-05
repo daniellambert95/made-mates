@@ -1,90 +1,200 @@
-import Image from "next/image";
-import Link from "next/link";
-import Button from "@/components/Button";
-import { Target, Globe, Users } from "lucide-react";
+"use client";
 
-export default function About() {
+import { useI18n } from "@/lib/i18n";
+import { Building2, Globe2, Target, TrendingUp, Users, Award } from "lucide-react";
+import Link from "next/link";
+import Image from "next/image";
+
+export default function AboutPage() {
+    const { t } = useI18n();
+
+    const stats = [
+        {
+            icon: <Building2 className="w-8 h-8 text-secondary mb-2" />,
+            value: "6",
+            label: t("about.stat.industries"),
+        },
+        {
+            icon: <Globe2 className="w-8 h-8 text-secondary mb-2" />,
+            value: "20+",
+            label: t("about.stat.countries"),
+        },
+        {
+            icon: <Users className="w-8 h-8 text-secondary mb-2" />,
+            value: "10+",
+            label: t("about.stat.years"),
+        },
+    ];
+
+    const values = [
+        {
+            icon: <Target className="w-12 h-12 text-secondary" />,
+            title: t("about.value.innovation"),
+            description: t("about.value.innovation.desc"),
+        },
+        {
+            icon: <Award className="w-12 h-12 text-secondary" />,
+            title: t("about.value.quality"),
+            description: t("about.value.quality.desc"),
+        },
+        {
+            icon: <TrendingUp className="w-12 h-12 text-secondary" />,
+            title: t("about.value.growth"),
+            description: t("about.value.growth.desc"),
+        },
+        {
+            icon: <Users className="w-12 h-12 text-secondary" />,
+            title: t("about.value.partnership"),
+            description: t("about.value.partnership.desc"),
+        },
+    ];
+
     return (
         <div className="flex flex-col min-h-screen">
-            {/* Header Section */}
-            <section className="bg-white py-20 text-center">
-                <h1 className="text-5xl font-bold text-primary mb-6">About Us</h1>
-                <p className="text-xl text-gray-600 max-w-2xl mx-auto px-4">
-                    We are dedicated to helping your brand shine while keeping our planet green.
-                </p>
+            {/* Hero Section */}
+            <section className="relative bg-primary text-white py-32">
+                <div className="absolute inset-0 overflow-hidden">
+                    <div className="absolute inset-0 bg-linear-to-br from-primary via-primary to-primary/80"></div>
+                </div>
+                <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+                    <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6">
+                        {t("about.page.title")}
+                    </h1>
+                    <p className="text-xl md:text-2xl text-gray-200 max-w-3xl mx-auto leading-relaxed">
+                        {t("about.page.subtitle")}
+                    </p>
+                </div>
             </section>
 
-            {/* Mission Section */}
-            <section className="bg-dark-grey text-white py-24">
+            {/* Company Overview */}
+            <section className="py-24 bg-white">
                 <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-                    <div className="grid grid-cols-1 md:grid-cols-2 gap-16 items-center">
-                        <div>
-                            <div className="flex items-center space-x-4 mb-6">
-                                <Target className="w-12 h-12 text-secondary" />
-                                <h2 className="text-3xl font-bold">Our Mission</h2>
-                            </div>
-                            <p className="text-2xl font-light leading-relaxed mb-8">
-                                "Our mission is simple: boost your visibility while caring for our planet."
+                    <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+                        <div className="space-y-6">
+                            <h2 className="text-3xl md:text-4xl font-bold text-primary">
+                                {t("about.page.who")}
+                            </h2>
+                            <div className="w-20 h-1 bg-secondary rounded-full"></div>
+                            <p className="text-lg text-gray-600 leading-relaxed">
+                                {t("about.desc")}
                             </p>
-                            <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
-                                <div className="flex items-start space-x-3">
-                                    <Globe className="w-6 h-6 text-secondary mt-1" />
-                                    <p className="text-gray-300">Global Reach, Local Impact</p>
-                                </div>
-                                <div className="flex items-start space-x-3">
-                                    <Users className="w-6 h-6 text-secondary mt-1" />
-                                    <p className="text-gray-300">Community Driven</p>
-                                </div>
-                            </div>
+                            <p className="text-lg text-gray-600 leading-relaxed">
+                                {t("about.page.who.desc")}
+                            </p>
                         </div>
-                        <div className="relative h-[400px] rounded-lg overflow-hidden shadow-2xl">
-                            <Image
-                                src="https://images.unsplash.com/photo-1542601906990-b4d3fb778b09?q=80&w=2813&auto=format&fit=crop"
-                                alt="Mission"
-                                fill
-                                className="object-cover"
-                            />
+
+                        {/* Stats Grid */}
+                        <div className="grid grid-cols-1 sm:grid-cols-3 gap-6">
+                            {stats.map((stat, index) => (
+                                <div
+                                    key={index}
+                                    className="p-8 bg-gray-50 rounded-xl text-center hover:shadow-lg transition-shadow border border-gray-100"
+                                >
+                                    <div className="flex justify-center">{stat.icon}</div>
+                                    <div className="text-4xl font-bold text-primary mb-2">{stat.value}</div>
+                                    <div className="text-sm text-gray-500 font-medium uppercase tracking-wide">
+                                        {stat.label}
+                                    </div>
+                                </div>
+                            ))}
                         </div>
                     </div>
                 </div>
             </section>
 
-            {/* Vision Section */}
-            <section className="relative py-32">
-                <div className="absolute inset-0">
-                    <Image
-                        src="https://images.unsplash.com/photo-1492684223066-81342ee5ff30?q=80&w=2670&auto=format&fit=crop"
-                        alt="Crowd"
-                        fill
-                        className="object-cover"
-                    />
-                    <div className="absolute inset-0 bg-primary/80 mix-blend-multiply" />
-                </div>
-                <div className="relative z-10 max-w-4xl mx-auto px-4 text-center text-white">
-                    <h2 className="text-3xl md:text-5xl font-bold leading-tight mb-8">
-                        "Imagine your brand in stadiums, festivals, city streets, and shared thousands of times across social media, giving you authentic visibility where it matters most. The best part? It all happens without a single paid ad."
-                    </h2>
+            {/* Our Values */}
+            <section className="py-24 bg-gray-50">
+                <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                    <div className="text-center mb-16">
+                        <h2 className="text-3xl md:text-4xl font-bold text-primary mb-4">
+                            {t("about.page.values")}
+                        </h2>
+                        <div className="w-20 h-1 bg-secondary mx-auto rounded-full"></div>
+                    </div>
+
+                    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                        {values.map((value, index) => (
+                            <div
+                                key={index}
+                                className="bg-white p-8 rounded-xl shadow-sm hover:shadow-lg transition-all duration-300 border border-gray-100"
+                            >
+                                <div className="mb-6 flex justify-center">{value.icon}</div>
+                                <h3 className="text-xl font-bold text-primary mb-4 text-center">
+                                    {value.title}
+                                </h3>
+                                <p className="text-gray-600 text-center leading-relaxed">
+                                    {value.description}
+                                </p>
+                            </div>
+                        ))}
+                    </div>
                 </div>
             </section>
 
-            {/* CTA Banner */}
-            <section className="relative py-24 bg-white">
-                <div className="absolute inset-0 overflow-hidden">
-                    <Image
-                        src="https://images.unsplash.com/photo-1511578314322-379afb476865?q=80&w=2669&auto=format&fit=crop"
-                        alt="CTA Background"
-                        fill
-                        className="object-cover opacity-10"
-                    />
+            {/* Our Operations Overview */}
+            <section className="py-24 bg-white">
+                <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                    <div className="text-center mb-16">
+                        <h2 className="text-3xl md:text-4xl font-bold text-primary mb-4">
+                            {t("about.page.operations")}
+                        </h2>
+                        <div className="w-20 h-1 bg-secondary mx-auto rounded-full mb-6"></div>
+                        <p className="text-lg text-gray-600 max-w-3xl mx-auto">
+                            {t("about.page.operations.desc")}
+                        </p>
+                    </div>
+
+                    <div className="grid grid-cols-2 md:grid-cols-3 gap-8 mb-12">
+                        {[
+                            { name: "MADE mates Fashion GmbH", logo: "/images/logos/brand-logos/fashion-logo.webp" },
+                            { name: "MADE mates Healthcare GmbH", logo: "/images/logos/brand-logos/healthcare-logo.webp" },
+                            { name: "MADE mates Toys GmbH", logo: "/images/logos/brand-logos/toys-logo.webp" },
+                            { name: "MADE mates Petstep GmbH", logo: "/images/logos/brand-logos/petstep-logo.webp" },
+                            { name: "MADE mates MUST GmbH", logo: "/images/logos/brand-logos/must-logo.webp" },
+                            { name: "MADE mates Power GmbH", logo: "/images/logos/brand-logos/power-logo.webp" },
+                        ].map((operation, index) => (
+                            <div
+                                key={index}
+                                className="p-6 bg-gray-50 rounded-xl text-center hover:bg-gray-100 transition-colors border border-gray-200 flex flex-col items-center gap-4"
+                            >
+                                <div className="relative w-full h-24">
+                                    <Image
+                                        src={operation.logo}
+                                        alt={operation.name}
+                                        fill
+                                        className="object-contain"
+                                    />
+                                </div>
+                                <p className="font-semibold text-primary text-sm">{operation.name}</p>
+                            </div>
+                        ))}
+                    </div>
+
+                    <div className="text-center">
+                        <Link
+                            href="/operations"
+                            className="inline-block bg-secondary text-white font-semibold px-8 py-4 rounded-full hover:bg-secondary/90 transition-colors shadow-lg"
+                        >
+                            {t("about.page.operations.cta")}
+                        </Link>
+                    </div>
                 </div>
-                <div className="relative z-10 max-w-4xl mx-auto px-4 text-center">
-                    <h2 className="text-4xl font-bold text-primary mb-6">
-                        The crowd&apos;s waiting. Let&apos;s put your brand in it.
+            </section>
+
+            {/* CTA Section */}
+            <section className="py-24 text-primary" style={{ backgroundColor: '#d8efff' }}>
+                <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+                    <h2 className="text-3xl md:text-4xl font-bold mb-6">
+                        {t("about.page.cta.title")}
                     </h2>
-                    <Link href="/contact">
-                        <Button variant="primary" className="text-lg px-10 py-4 shadow-lg">
-                            Get Started Now
-                        </Button>
+                    <p className="text-xl text-gray-700 mb-8">
+                        {t("about.page.cta.subtitle")}
+                    </p>
+                    <Link
+                        href="/#contact"
+                        className="inline-block bg-secondary text-white font-semibold px-10 py-4 rounded-full hover:bg-secondary/90 transition-colors shadow-lg text-lg"
+                    >
+                        {t("contact.title")}
                     </Link>
                 </div>
             </section>

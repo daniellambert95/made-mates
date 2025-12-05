@@ -35,8 +35,8 @@ export default function Contact() {
                                 <Mail className="w-6 h-6 text-secondary mt-1" />
                                 <div>
                                     <p className="font-semibold text-lg mb-1">{t("contact.email")}</p>
-                                    <a href="mailto:info@mademates.com" className="text-gray-300 hover:text-white transition-colors">
-                                        info@mademates.com
+                                    <a href="mailto:info@made-mates.com" className="text-gray-300 hover:text-white transition-colors">
+                                        info@made-mates.com
                                     </a>
                                 </div>
                             </div>

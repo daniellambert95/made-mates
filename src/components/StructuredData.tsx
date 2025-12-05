@@ -18,7 +18,7 @@ export default function StructuredData() {
         "contactPoint": {
             "@type": "ContactPoint",
             "contactType": "Customer Service",
-            "email": "info@mademates.com"
+            "email": "info@made-mates.com"
         },
         "sameAs": [
             "https://www.instagram.com/mademates",

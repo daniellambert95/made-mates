@@ -1,53 +1,57 @@
 "use client";
 
+import Image from "next/image";
 import { useI18n } from "@/lib/i18n";
-import { Shirt, Stethoscope, Gamepad2, Dog, Cpu, Zap, ArrowRight } from "lucide-react";
+import { ArrowRight } from "lucide-react";
+import { useState } from "react";
+import OperationModal from "./OperationModal";
 
 export default function Operations() {
     const { t } = useI18n();
+    const [selectedOperation, setSelectedOperation] = useState<string | null>(null);
 
     const operations = [
         {
             id: "fashion",
             title: "MADE mates Fashion",
-            icon: <Shirt className="w-12 h-12 text-white" />,
+            image: "/images/logos/brand-logos/fashion.webp",
+            modalImage: "/images/logos/brand-logos/fashion-logo.webp",
             descKey: "ops.fashion.desc",
-            color: "bg-pink-500", // Placeholder color, can be adjusted
         },
         {
             id: "healthcare",
             title: "MADE mates Healthcare",
-            icon: <Stethoscope className="w-12 h-12 text-white" />,
+            image: "/images/logos/brand-logos/healthcare.webp",
+            modalImage: "/images/logos/brand-logos/healthcare-logo.webp",
             descKey: "ops.healthcare.desc",
-            color: "bg-teal-500",
         },
         {
             id: "toys",
             title: "MADE mates Toys",
-            icon: <Gamepad2 className="w-12 h-12 text-white" />,
+            image: "/images/logos/brand-logos/toys.webp",
+            modalImage: "/images/logos/brand-logos/toys-logo.webp",
             descKey: "ops.toys.desc",
-            color: "bg-yellow-500",
         },
         {
             id: "petstep",
             title: "MADE mates Petstep",
-            icon: <Dog className="w-12 h-12 text-white" />,
+            image: "/images/logos/brand-logos/petstep.webp",
+            modalImage: "/images/logos/brand-logos/petstep-logo.webp",
             descKey: "ops.petstep.desc",
-            color: "bg-orange-500",
         },
         {
             id: "must",
             title: "MADE mates MUST",
-            icon: <Cpu className="w-12 h-12 text-white" />,
+            image: "/images/logos/brand-logos/must.webp",
+            modalImage: "/images/logos/brand-logos/must-logo.webp",
             descKey: "ops.must.desc",
-            color: "bg-indigo-500",
         },
         {
             id: "power",
             title: "MADE mates Power",
-            icon: <Zap className="w-12 h-12 text-white" />,
+            image: "/images/logos/brand-logos/power.webp",
+            modalImage: "/images/logos/brand-logos/power-logo.webp",
             descKey: "ops.power.desc",
-            color: "bg-red-500",
         },
     ];
 
@@ -67,11 +71,15 @@ export default function Operations() {
                             key={op.id}
                             className="group bg-white rounded-2xl shadow-sm hover:shadow-xl transition-all duration-300 overflow-hidden border border-gray-100 flex flex-col"
                         >
-                            {/* Icon Header */}
-                            <div className={`h-32 ${op.color} flex items-center justify-center relative overflow-hidden`}>
-                                <div className="absolute inset-0 bg-black/10 group-hover:bg-black/0 transition-colors"></div>
-                                <div className="transform group-hover:scale-110 transition-transform duration-300">
-                                    {op.icon}
+                            {/* Logo Header */}
+                            <div className="h-48 relative overflow-hidden flex items-center justify-center p-6" style={{ backgroundColor: '#d8efff' }}>
+                                <div className="relative w-full h-full transform group-hover:scale-105 transition-transform duration-300">
+                                    <Image
+                                        src={op.image}
+                                        alt={op.title}
+                                        fill
+                                        className="object-contain"
+                                    />
                                 </div>
                             </div>
 
@@ -85,15 +93,30 @@ export default function Operations() {
                                 </p>
 
                                 <div className="mt-auto pt-4 border-t border-gray-100">
-                                    <span className="text-secondary font-medium flex items-center group-hover:translate-x-2 transition-transform cursor-pointer">
+                                    <button
+                                        onClick={() => setSelectedOperation(op.id)}
+                                        className="text-secondary font-medium flex items-center group-hover:translate-x-2 transition-transform"
+                                    >
                                         {t("ops.cta")} <ArrowRight className="ml-2 w-4 h-4" />
-                                    </span>
+                                    </button>
                                 </div>
                             </div>
                         </div>
                     ))}
                 </div>
             </div>
+
+            {/* Modal */}
+            {selectedOperation && (
+                <OperationModal
+                    isOpen={true}
+                    onClose={() => setSelectedOperation(null)}
+                    title={operations.find((op) => op.id === selectedOperation)?.title || ""}
+                    subtitle={t(`ops.${selectedOperation}.subtitle`)}
+                    description={t(`ops.${selectedOperation}.full`)}
+                    image={operations.find((op) => op.id === selectedOperation)?.modalImage || ""}
+                />
+            )}
         </section>
     );
 }

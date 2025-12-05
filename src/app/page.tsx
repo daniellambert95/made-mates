@@ -3,6 +3,7 @@ import About from "@/components/About";
 import Operations from "@/components/Operations";
 import WhyPartner from "@/components/WhyPartner";
 import Contact from "@/components/Contact";
+import HomeCTA from "@/components/HomeCTA";
 
 export default function Home() {
   return (
@@ -12,6 +13,7 @@ export default function Home() {
       <Operations />
       <WhyPartner />
       <Contact />
+      <HomeCTA />
     </div>
   );
 }

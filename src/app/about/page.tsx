@@ -21,7 +21,7 @@ export default function AboutPage() {
         },
         {
             icon: <Users className="w-8 h-8 text-secondary mb-2" />,
-            value: "10+",
+            value: "40+",
             label: t("about.stat.years"),
         },
     ];

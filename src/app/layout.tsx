@@ -5,6 +5,7 @@ import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import StructuredData from "@/components/StructuredData";
 import CookieBanner from "@/components/CookieBanner";
+import HtmlLangWrapper from "@/components/HtmlLangWrapper";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -50,6 +51,7 @@ export default function RootLayout({
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased flex flex-col min-h-screen`}
       >
+        <HtmlLangWrapper />
         <StructuredData />
         <div className="relative">
           <Navbar />

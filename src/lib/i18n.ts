@@ -28,7 +28,7 @@ const translations: Translations = {
         // About
         "about.title": "About MADE mates",
         "about.desc": "We are a diversified holding company managing a portfolio of specialized divisions. Our expertise spans across multiple industries, delivering innovation and reliability to B2B partners worldwide.",
-        "about.stat.years": "Years in Business",
+        "about.stat.years": "years of business experience",
         "about.stat.industries": "Industries Served",
         "about.stat.countries": "Countries Reached",
 
@@ -128,6 +128,8 @@ const translations: Translations = {
         // Impressum
         "impressum.title": "Imprint",
         "impressum.back": "← Back to Homepage",
+        "impressum.constructionNotice": "Website Under Construction",
+        "impressum.constructionText": "This website is currently being developed and will be fully operational by the end of January 2026. All contact information provided below remains valid and can be used for inquiries.",
         "impressum.section1": "Information in accordance with § 5 TMG",
         "impressum.contact": "Contact",
         "impressum.email": "E-mail",
@@ -219,7 +221,7 @@ const translations: Translations = {
         // About
         "about.title": "Über MADE mates Holding",
         "about.desc": "Wir sind eine diversifizierte Holdinggesellschaft, die ein Portfolio spezialisierter Geschäftsbereiche verwaltet. Unsere Expertise erstreckt sich über mehrere Branchen und liefert Innovation und Zuverlässigkeit für B2B-Partner weltweit.",
-        "about.stat.years": "Jahre im Geschäft",
+        "about.stat.years": "Jahre Geschäfts-erfahrung",
         "about.stat.industries": "Branchen",
         "about.stat.countries": "Länder",
 
@@ -319,6 +321,8 @@ const translations: Translations = {
         // Impressum
         "impressum.title": "Impressum",
         "impressum.back": "← Zurück zur Startseite",
+        "impressum.constructionNotice": "Website im Aufbau",
+        "impressum.constructionText": "Diese Website befindet sich derzeit im Aufbau und wird bis Ende Januar 2026 vollständig fertiggestellt sein. Alle unten angegebenen Kontaktinformationen sind gültig und können für Anfragen genutzt werden.",
         "impressum.section1": "Angaben gemäß § 5 TMG",
         "impressum.contact": "Kontakt",
         "impressum.email": "E-Mail",

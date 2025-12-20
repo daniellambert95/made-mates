@@ -9,7 +9,7 @@ export default function About() {
     const stats = [
         {
             icon: <Briefcase className="w-8 h-8 text-secondary mb-2" />,
-            value: "10+",
+            value: "40+",
             label: "about.stat.years",
         },
         {

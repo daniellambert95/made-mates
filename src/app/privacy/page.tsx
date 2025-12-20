@@ -99,7 +99,7 @@ export default function PrivacyPage() {
                                 </h3>
                                 <p>
                                     {t("privacy.recipientsText")}{" "}
-                                    <span className="font-medium">[EMAIL_SERVICE]</span>{" "}
+                                    <span className="font-medium">standard email infrastructure</span>{" "}
                                     {t("privacy.recipientsText2")}
                                 </p>
 
@@ -124,7 +124,7 @@ export default function PrivacyPage() {
                                     {t("privacy.hostingText1")}
                                 </p>
                                 Site & Sight
-                                <p className="font-medium">www.siteandight.com</p>
+                                <p className="font-medium">www.siteandsight.com</p>
                                 <p>
                                     {t("privacy.hostingText2")}
                                 </p>

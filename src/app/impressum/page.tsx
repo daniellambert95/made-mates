@@ -10,6 +10,25 @@ export default function ImpressumPage() {
         <div className="min-h-screen bg-gray-50">
             <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
                 <div className="bg-white rounded-lg shadow-sm p-8 md:p-12">
+                    {/* Construction Notice Banner */}
+                    <div className="mb-8 bg-amber-50 border-l-4 border-amber-500 p-6 rounded-r-lg">
+                        <div className="flex items-start">
+                            <div className="flex-shrink-0">
+                                <svg className="h-6 w-6 text-amber-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z" />
+                                </svg>
+                            </div>
+                            <div className="ml-4">
+                                <h3 className="text-lg font-semibold text-amber-900 mb-2">
+                                    {t("impressum.constructionNotice")}
+                                </h3>
+                                <p className="text-amber-800">
+                                    {t("impressum.constructionText")}
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
                     <h1 className="text-4xl font-bold text-primary mb-8">{t("impressum.title")}</h1>
 
                     <div className="prose prose-lg max-w-none">
@@ -36,8 +55,8 @@ export default function ImpressumPage() {
                                         info@made-mates.com
                                     </a>
                                 </p>
-                                <p>
-                                    <span className="font-medium">{t("impressum.phone")}:</span> [PHONE]
+                                <p className="text-gray-600 italic">
+                                    {t("impressum.phone")}: Available via email
                                 </p>
                             </div>
                         </section>
@@ -61,8 +80,7 @@ export default function ImpressumPage() {
                                 <p>
                                     <span className="font-medium">{t("impressum.registerEntry")}:</span>
                                 </p>
-                                <p>{t("impressum.registerCourt")}: [REGISTER_COURT]</p>
-                                <p>{t("impressum.registerNumber")}: [REGISTER_NUMBER]</p>
+                                <p className="text-gray-600 italic">Registration details available upon request</p>
                             </div>
                         </section>
 
@@ -74,7 +92,7 @@ export default function ImpressumPage() {
                                 <p>
                                     {t("impressum.vatText")}:
                                 </p>
-                                <p className="font-medium">[VAT_NUMBER]</p>
+                                <p className="text-gray-600 italic">Available upon request</p>
                             </div>
                         </section>
 

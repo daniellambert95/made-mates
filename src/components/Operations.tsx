@@ -14,42 +14,42 @@ export default function Operations() {
         {
             id: "fashion",
             title: "MADE mates Fashion",
-            image: "/images/logos/brand-logos/fashion.webp",
+            image: "/images/logos/brand-logos/fashion-logo.webp",
             modalImage: "/images/logos/brand-logos/fashion-logo.webp",
             descKey: "ops.fashion.desc",
         },
         {
             id: "healthcare",
             title: "MADE mates Healthcare",
-            image: "/images/logos/brand-logos/healthcare.webp",
+            image: "/images/logos/brand-logos/healthcare-logo.webp",
             modalImage: "/images/logos/brand-logos/healthcare-logo.webp",
             descKey: "ops.healthcare.desc",
         },
         {
             id: "toys",
             title: "MADE mates Toys",
-            image: "/images/logos/brand-logos/toys.webp",
+            image: "/images/logos/brand-logos/toys-logo.webp",
             modalImage: "/images/logos/brand-logos/toys-logo.webp",
             descKey: "ops.toys.desc",
         },
         {
             id: "petstep",
             title: "MADE mates Petstep",
-            image: "/images/logos/brand-logos/petstep.webp",
+            image: "/images/logos/brand-logos/petstep-logo.webp",
             modalImage: "/images/logos/brand-logos/petstep-logo.webp",
             descKey: "ops.petstep.desc",
         },
         {
             id: "must",
             title: "MADE mates MUST",
-            image: "/images/logos/brand-logos/must.webp",
+            image: "/images/logos/brand-logos/must-logo.webp",
             modalImage: "/images/logos/brand-logos/must-logo.webp",
             descKey: "ops.must.desc",
         },
         {
             id: "power",
             title: "MADE mates Power",
-            image: "/images/logos/brand-logos/power.webp",
+            image: "/images/logos/brand-logos/power-logo.webp",
             modalImage: "/images/logos/brand-logos/power-logo.webp",
             descKey: "ops.power.desc",
         },
@@ -72,7 +72,7 @@ export default function Operations() {
                             className="group bg-white rounded-2xl shadow-sm hover:shadow-xl transition-all duration-300 overflow-hidden border border-gray-100 flex flex-col"
                         >
                             {/* Logo Header */}
-                            <div className="h-48 relative overflow-hidden flex items-center justify-center p-6" style={{ backgroundColor: '#d8efff' }}>
+                            <div className="h-48 relative overflow-hidden flex items-center justify-center p-6" style={{ backgroundColor: '#f5f5f5' }}>
                                 <div className="relative w-full h-full transform group-hover:scale-105 transition-transform duration-300">
                                     <Image
                                         src={op.image}

@@ -13,7 +13,7 @@ export default function OperationsPage() {
             id: "fashion",
             title: "MADE mates Fashion GmbH",
             logo: "/images/logos/brand-logos/fashion-logo.webp",
-            image: "/images/logos/brand-logos/fashion.webp",
+            image: "/images/logos/brand-logos/fashion-logo.webp",
             descKey: "ops.fashion.desc",
             subtitleKey: "ops.fashion.subtitle",
             fullKey: "ops.fashion.full",
@@ -22,7 +22,7 @@ export default function OperationsPage() {
             id: "healthcare",
             title: "MADE mates Healthcare GmbH",
             logo: "/images/logos/brand-logos/healthcare-logo.webp",
-            image: "/images/logos/brand-logos/healthcare.webp",
+            image: "/images/logos/brand-logos/healthcare-logo.webp",
             descKey: "ops.healthcare.desc",
             subtitleKey: "ops.healthcare.subtitle",
             fullKey: "ops.healthcare.full",
@@ -31,7 +31,7 @@ export default function OperationsPage() {
             id: "toys",
             title: "MADE mates Toys GmbH",
             logo: "/images/logos/brand-logos/toys-logo.webp",
-            image: "/images/logos/brand-logos/toys.webp",
+            image: "/images/logos/brand-logos/toys-logo.webp",
             descKey: "ops.toys.desc",
             subtitleKey: "ops.toys.subtitle",
             fullKey: "ops.toys.full",
@@ -40,7 +40,7 @@ export default function OperationsPage() {
             id: "petstep",
             title: "MADE mates Petstep GmbH",
             logo: "/images/logos/brand-logos/petstep-logo.webp",
-            image: "/images/logos/brand-logos/petstep.webp",
+            image: "/images/logos/brand-logos/petstep-logo.webp",
             descKey: "ops.petstep.desc",
             subtitleKey: "ops.petstep.subtitle",
             fullKey: "ops.petstep.full",
@@ -49,7 +49,7 @@ export default function OperationsPage() {
             id: "must",
             title: "MADE mates MUST GmbH",
             logo: "/images/logos/brand-logos/must-logo.webp",
-            image: "/images/logos/brand-logos/must.webp",
+            image: "/images/logos/brand-logos/must-logo.webp",
             descKey: "ops.must.desc",
             subtitleKey: "ops.must.subtitle",
             fullKey: "ops.must.full",
@@ -58,7 +58,7 @@ export default function OperationsPage() {
             id: "power",
             title: "MADE mates Power GmbH",
             logo: "/images/logos/brand-logos/power-logo.webp",
-            image: "/images/logos/brand-logos/power.webp",
+            image: "/images/logos/brand-logos/power-logo.webp",
             descKey: "ops.power.desc",
             subtitleKey: "ops.power.subtitle",
             fullKey: "ops.power.full",
@@ -99,7 +99,7 @@ export default function OperationsPage() {
                                 >
                                     <div
                                         className="relative h-96 rounded-2xl overflow-hidden shadow-xl"
-                                        style={{ backgroundColor: "#d8efff" }}
+                                        style={{ backgroundColor: "#f5f5f5" }}
                                     >
                                         <div className="absolute inset-0 flex items-center justify-center p-12">
                                             <div className="relative w-full h-full">
@@ -140,7 +140,7 @@ export default function OperationsPage() {
             </section>
 
             {/* CTA Section */}
-            <section className="py-24 text-primary" style={{ backgroundColor: "#d8efff" }}>
+            <section className="py-24 text-primary" style={{ backgroundColor: "#f5f5f5" }}>
                 <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
                     <h2 className="text-3xl md:text-4xl font-bold mb-6">
                         {t("ops.page.cta.title")}

@@ -21,22 +21,22 @@ const translations: Translations = {
 
         // Hero
         "hero.tagline": "Innovating for a Diverse Future",
-        "hero.intro": "MADE mates Holding GmbH drives growth across fashion, healthcare, toys, pet care, electronics, and energy sectors.",
+        "hero.intro": "MADE mates Holding GmbH drives growth across fashion, healthcare, toys, pet care, electronics, and energy sectors, with solutions extending beyond these markets.",
         "hero.cta.explore": "Explore Our Operations",
         "hero.cta.contact": "Contact Us",
 
         // About
         "about.title": "About MADE mates",
-        "about.desc": "We are a diversified holding company managing a portfolio of specialized divisions. Our expertise spans across multiple industries, delivering innovation and reliability to B2B partners worldwide.",
+        "about.desc": "We are a diversified multi-sector company managing a portfolio of specialized divisions. Our expertise spans across multiple industries, delivering innovation and reliability to B2B partners worldwide.",
         "about.stat.years": "years of business experience",
         "about.stat.industries": "Industries Served",
         "about.stat.countries": "Countries Reached",
 
         // About Page
-        "about.page.title": "About MADE mates Holding",
-        "about.page.subtitle": "A diversified holding company driving innovation across six specialized industries",
+        "about.page.title": "About MADE mates",
+        "about.page.subtitle": "A diversified multi-sector company driving innovation across multiple specialized industries",
         "about.page.who": "Who We Are",
-        "about.page.who.desc": "At MADE mates Holding, we believe in the power of diversity and specialization. By fostering independent yet interconnected divisions, we ensure that each sector receives the dedicated focus it needs to thrive, while benefiting from the strength and stability of a unified holding structure.",
+        "about.page.who.desc": "At MADE mates, we believe in the power of diversity and specialization. By fostering independent yet interconnected divisions, we ensure that each sector receives the dedicated focus it needs to thrive, while benefiting from the strength and stability of a unified structure.",
         "about.page.values": "Our Values",
         "about.value.innovation": "Innovation",
         "about.value.innovation.desc": "We constantly evolve with market trends and embrace new technologies to stay ahead.",
@@ -45,7 +45,7 @@ const translations: Translations = {
         "about.value.growth": "Growth",
         "about.value.growth.desc": "We foster sustainable growth across all our operations and support our partners' success.",
         "about.value.partnership": "Partnership",
-        "about.value.partnership.desc": "Built on trust, transparency, and long-term collaboration with our B2B partners.",
+        "about.value.partnership.desc": "Long-term trustful partnerships - accelerate change through trusted partners. Marathon, not a sprint.",
         "about.page.operations": "Our Operations",
         "about.page.operations.desc": "Six specialized divisions, each a leader in their respective industry, united under one holding structure.",
         "about.page.operations.cta": "Explore Our Operations",
@@ -80,14 +80,20 @@ const translations: Translations = {
 
         // Why Partner
         "partner.title": "Why Become a MADE mate",
-        "partner.diverse": "Diverse Portfolio",
-        "partner.diverse.desc": "We operate across 6 distinct high-growth industries.",
+        "partner.diverse": "Expertise in several industries",
+        "partner.diverse.desc": "We operate globally and consult individually.",
         "partner.expert": "Industry Expertise",
         "partner.expert.desc": "Deep knowledge and specialized teams in every sector.",
-        "partner.reliable": "Reliable Partnerships",
+        "partner.reliable": "Reliable Partnership",
         "partner.reliable.desc": "Built on trust, quality, and long-term collaboration.",
         "partner.innovation": "Innovation Focus",
         "partner.innovation.desc": "Constantly evolving with market trends and technology.",
+        "partner.extended.title": "We create products — and we create the market around them",
+        "partner.extended.p1": "We don't advise on products. We build them.",
+        "partner.extended.p2": "We design and manufacture our own innovative products across multiple industries. Customers don't start from zero — they connect to proven solutions.",
+        "partner.extended.p3": "Our products know the market – we did the research and market analysis for you already.",
+        "partner.extended.p4": "Partners scale faster by connecting to our manufacturing, market presence, and distribution logic — without carrying the full risk alone.",
+        "partner.extended.p5": "Our partners don't just work with us — they grow with us.",
 
         // Home CTA
         "home.cta.title": "Ready to Explore Our Operations?",
@@ -214,22 +220,22 @@ const translations: Translations = {
 
         // Hero
         "hero.tagline": "Innovation für eine vielfältige Zukunft",
-        "hero.intro": "MADE mates Holding GmbH fördert Wachstum in den Bereichen Mode, Gesundheitswesen, Spielwaren, Heimtierbedarf, Elektronik und Energie.",
+        "hero.intro": "MADE mates Holding GmbH fördert Wachstum in den Bereichen Mode, Gesundheitswesen, Spielwaren, Heimtierbedarf, Elektronik und Energie, mit Lösungen, die über diese Märkte hinausgehen.",
         "hero.cta.explore": "Unsere Bereiche",
         "hero.cta.contact": "Kontaktieren Sie uns",
 
         // About
-        "about.title": "Über MADE mates Holding",
-        "about.desc": "Wir sind eine diversifizierte Holdinggesellschaft, die ein Portfolio spezialisierter Geschäftsbereiche verwaltet. Unsere Expertise erstreckt sich über mehrere Branchen und liefert Innovation und Zuverlässigkeit für B2B-Partner weltweit.",
+        "about.title": "Über MADE mates",
+        "about.desc": "Wir sind ein diversifiziertes Multi-Sektor-Unternehmen, das ein Portfolio spezialisierter Geschäftsbereiche verwaltet. Unsere Expertise erstreckt sich über mehrere Branchen und liefert Innovation und Zuverlässigkeit für B2B-Partner weltweit.",
         "about.stat.years": "Jahre Geschäfts-erfahrung",
         "about.stat.industries": "Branchen",
         "about.stat.countries": "Länder",
 
         // About Page
-        "about.page.title": "Über MADE mates Holding",
-        "about.page.subtitle": "Eine diversifizierte Holdinggesellschaft, die Innovation in sechs spezialisierten Branchen vorantreibt",
+        "about.page.title": "Über MADE mates",
+        "about.page.subtitle": "Ein diversifiziertes Multi-Sektor-Unternehmen, das Innovation in mehreren spezialisierten Branchen vorantreibt",
         "about.page.who": "Wer wir sind",
-        "about.page.who.desc": "Bei MADE mates Holding glauben wir an die Kraft von Vielfalt und Spezialisierung. Durch die Förderung unabhängiger, aber miteinander verbundener Geschäftsbereiche stellen wir sicher, dass jeder Sektor die dedizierte Aufmerksamkeit erhält, die er zum Gedeihen benötigt, während er von der Stärke und Stabilität einer einheitlichen Holdingstruktur profitiert.",
+        "about.page.who.desc": "Bei MADE mates glauben wir an die Kraft von Vielfalt und Spezialisierung. Durch die Förderung unabhängiger, aber miteinander verbundener Geschäftsbereiche stellen wir sicher, dass jeder Sektor die dedizierte Aufmerksamkeit erhält, die er zum Gedeihen benötigt, während er von der Stärke und Stabilität einer einheitlichen Struktur profitiert.",
         "about.page.values": "Unsere Werte",
         "about.value.innovation": "Innovation",
         "about.value.innovation.desc": "Wir entwickeln uns ständig mit Markttrends weiter und nutzen neue Technologien, um voraus zu bleiben.",
@@ -238,7 +244,7 @@ const translations: Translations = {
         "about.value.growth": "Wachstum",
         "about.value.growth.desc": "Wir fördern nachhaltiges Wachstum in allen unseren Bereichen und unterstützen den Erfolg unserer Partner.",
         "about.value.partnership": "Partnerschaft",
-        "about.value.partnership.desc": "Aufgebaut auf Vertrauen, Transparenz und langfristiger Zusammenarbeit mit unseren B2B-Partnern.",
+        "about.value.partnership.desc": "Langfristige vertrauensvolle Partnerschaften - Veränderungen durch vertrauenswürdige Partner beschleunigen. Marathon, kein Sprint.",
         "about.page.operations": "Unsere Geschäftsbereiche",
         "about.page.operations.desc": "Sechs spezialisierte Bereiche, jeder ein Marktführer in seiner Branche, vereint unter einer Holdingstruktur.",
         "about.page.operations.cta": "Unsere Bereiche erkunden",
@@ -273,14 +279,20 @@ const translations: Translations = {
 
         // Why Partner
         "partner.title": "Warum mit uns arbeiten?",
-        "partner.diverse": "Vielfältiges Portfolio",
-        "partner.diverse.desc": "Wir sind in 6 verschiedenen Wachstumsbranchen tätig.",
+        "partner.diverse": "Expertise in mehreren Branchen",
+        "partner.diverse.desc": "Wir agieren global und beraten individuell.",
         "partner.expert": "Branchenexpertise",
         "partner.expert.desc": "Tiefes Wissen und spezialisierte Teams in jedem Sektor.",
-        "partner.reliable": "Verlässliche Partnerschaften",
+        "partner.reliable": "Verlässliche Partnerschaft",
         "partner.reliable.desc": "Aufgebaut auf Vertrauen, Qualität und langfristiger Zusammenarbeit.",
         "partner.innovation": "Innovationsfokus",
         "partner.innovation.desc": "Stetige Weiterentwicklung mit Markttrends und Technologie.",
+        "partner.extended.title": "Wir schaffen Produkte — und wir schaffen den Markt dafür",
+        "partner.extended.p1": "Wir beraten nicht über Produkte. Wir bauen sie.",
+        "partner.extended.p2": "Wir entwerfen und produzieren unsere eigenen innovativen Produkte über mehrere Branchen hinweg. Kunden starten nicht bei Null — sie verbinden sich mit bewährten Lösungen.",
+        "partner.extended.p3": "Unsere Produkte kennen den Markt – wir haben bereits die Forschung und Marktanalyse für Sie durchgeführt.",
+        "partner.extended.p4": "Partner skalieren schneller, indem sie sich mit unserer Fertigung, Marktpräsenz und Vertriebslogik verbinden — ohne das volle Risiko allein zu tragen.",
+        "partner.extended.p5": "Unsere Partner arbeiten nicht nur mit uns — sie wachsen mit uns.",
 
         // Home CTA
         "home.cta.title": "Bereit, unsere Geschäftsbereiche zu erkunden?",

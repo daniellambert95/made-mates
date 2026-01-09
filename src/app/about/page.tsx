@@ -11,7 +11,7 @@ export default function AboutPage() {
     const stats = [
         {
             icon: <Building2 className="w-8 h-8 text-secondary mb-2" />,
-            value: "6",
+            value: "11",
             label: t("about.stat.industries"),
         },
         {
@@ -182,7 +182,7 @@ export default function AboutPage() {
             </section>
 
             {/* CTA Section */}
-            <section className="py-24 text-primary" style={{ backgroundColor: '#d8efff' }}>
+            <section className="py-24 text-primary" style={{ backgroundColor: '#f5f5f5' }}>
                 <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
                     <h2 className="text-3xl md:text-4xl font-bold mb-6">
                         {t("about.page.cta.title")}

@@ -7,7 +7,7 @@ export default function HomeCTA() {
     const { t } = useI18n();
 
     return (
-        <section className="py-24 text-primary" style={{ backgroundColor: '#d8efff' }}>
+        <section className="py-24 text-primary" style={{ backgroundColor: '#f5f5f5' }}>
             <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
                 <h2 className="text-3xl md:text-4xl font-bold mb-6">
                     {t("home.cta.title")}

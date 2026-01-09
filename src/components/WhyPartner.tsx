@@ -57,6 +57,25 @@ export default function WhyPartner() {
                         </div>
                     ))}
                 </div>
+
+                {/* Extended Why Partner Content */}
+                <div className="mt-24 max-w-4xl mx-auto space-y-8 text-center">
+                    <h3 className="text-3xl font-bold text-primary mb-8">
+                        {t("partner.extended.title")}
+                    </h3>
+
+                    <div className="space-y-6 text-lg text-gray-700 leading-relaxed">
+                        <p className="font-semibold text-xl text-primary">
+                            {t("partner.extended.p1")}
+                        </p>
+                        <p>{t("partner.extended.p2")}</p>
+                        <p>{t("partner.extended.p3")}</p>
+                        <p>{t("partner.extended.p4")}</p>
+                        <p className="font-semibold text-xl text-primary mt-8">
+                            {t("partner.extended.p5")}
+                        </p>
+                    </div>
+                </div>
             </div>
         </section>
     );

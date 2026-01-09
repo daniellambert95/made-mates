@@ -180,7 +180,8 @@ export default function Navbar() {
               </button>
 
               {/* Social Icons */}
-              <a
+              {/* LinkedIn link commented out until LinkedIn page is set up */}
+              {/* <a
                 href="https://linkedin.com"
                 target="_blank"
                 rel="noopener noreferrer"
@@ -195,7 +196,7 @@ export default function Navbar() {
                   <rect width="4" height="12" x="2" y="9" />
                   <circle cx="4" cy="4" r="2" />
                 </svg>
-              </a>
+              </a> */}
 
               <a
                 href="https://wa.me/yourphonenumber"
@@ -295,7 +296,8 @@ export default function Navbar() {
 
             {/* Mobile Social Links */}
             <div className="flex items-center justify-center space-x-8 pt-8">
-              <a
+              {/* LinkedIn link commented out until LinkedIn page is set up */}
+              {/* <a
                 href="https://linkedin.com"
                 target="_blank"
                 rel="noopener noreferrer"
@@ -307,7 +309,7 @@ export default function Navbar() {
                   <rect width="4" height="12" x="2" y="9" />
                   <circle cx="4" cy="4" r="2" />
                 </svg>
-              </a>
+              </a> */}
               <a
                 href="https://wa.me/yourphonenumber"
                 target="_blank"

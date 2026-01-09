@@ -2,9 +2,40 @@
 
 import { useI18n } from "@/lib/i18n";
 import { MapPin, Mail, Phone } from "lucide-react";
+import { useState } from "react";
 
 export default function Contact() {
     const { t } = useI18n();
+    const [isSubmitting, setIsSubmitting] = useState(false);
+    const [submitStatus, setSubmitStatus] = useState<"idle" | "success" | "error">("idle");
+
+    const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
+        e.preventDefault();
+        setIsSubmitting(true);
+        setSubmitStatus("idle");
+
+        const formData = new FormData(e.currentTarget);
+
+        try {
+            const response = await fetch("https://api.web3forms.com/submit", {
+                method: "POST",
+                body: formData,
+            });
+
+            const data = await response.json();
+
+            if (data.success) {
+                setSubmitStatus("success");
+                (e.target as HTMLFormElement).reset();
+            } else {
+                setSubmitStatus("error");
+            }
+        } catch (error) {
+            setSubmitStatus("error");
+        } finally {
+            setIsSubmitting(false);
+        }
+    };
 
     return (
         <section id="contact" className="py-32 bg-gray-50">
@@ -67,7 +98,12 @@ export default function Contact() {
 
                     {/* Contact Form */}
                     <div className="bg-white p-10 rounded-2xl shadow-lg border border-gray-100">
-                        <form className="space-y-6">
+                        <form className="space-y-6" onSubmit={handleSubmit}>
+                            <input type="hidden" name="access_key" value={process.env.NEXT_PUBLIC_WEB3FORMS_ACCESS_KEY} />
+                            <input type="hidden" name="subject" value="New Contact Form Submission from MADE mates Website" />
+                            <input type="hidden" name="from_name" value="MADE mates Website" />
+                            <input type="hidden" name="redirect" value="false" />
+
                             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                                 <div>
                                     <label htmlFor="name" className="block text-sm font-medium text-gray-700 mb-2">
@@ -76,6 +112,7 @@ export default function Contact() {
                                     <input
                                         type="text"
                                         id="name"
+                                        name="name"
                                         required
                                         className="w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-secondary focus:border-transparent outline-none transition-all"
                                     />
@@ -87,6 +124,7 @@ export default function Contact() {
                                     <input
                                         type="email"
                                         id="email"
+                                        name="email"
                                         required
                                         className="w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-secondary focus:border-transparent outline-none transition-all"
                                     />
@@ -101,6 +139,7 @@ export default function Contact() {
                                     <input
                                         type="text"
                                         id="company"
+                                        name="company"
                                         className="w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-secondary focus:border-transparent outline-none transition-all"
                                     />
                                 </div>
@@ -111,6 +150,7 @@ export default function Contact() {
                                     <input
                                         type="tel"
                                         id="phone"
+                                        name="phone"
                                         className="w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-secondary focus:border-transparent outline-none transition-all"
                                     />
                                 </div>
@@ -122,6 +162,7 @@ export default function Contact() {
                                 </label>
                                 <select
                                     id="interest"
+                                    name="interest"
                                     className="w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-secondary focus:border-transparent outline-none transition-all bg-white"
                                 >
                                     <option value="all">{t("contact.all_ops")}</option>
@@ -140,17 +181,31 @@ export default function Contact() {
                                 </label>
                                 <textarea
                                     id="message"
+                                    name="message"
                                     rows={4}
                                     required
                                     className="w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-secondary focus:border-transparent outline-none transition-all resize-none"
                                 ></textarea>
                             </div>
 
+                            {submitStatus === "success" && (
+                                <div className="p-4 bg-green-50 border border-green-200 rounded-lg text-green-800">
+                                    Thank you! Your message has been sent successfully.
+                                </div>
+                            )}
+
+                            {submitStatus === "error" && (
+                                <div className="p-4 bg-red-50 border border-red-200 rounded-lg text-red-800">
+                                    Oops! Something went wrong. Please try again.
+                                </div>
+                            )}
+
                             <button
                                 type="submit"
-                                className="w-full bg-secondary hover:bg-blue-600 text-white font-bold py-4 rounded-lg transition-all transform hover:scale-[1.02] shadow-md"
+                                disabled={isSubmitting}
+                                className="w-full bg-secondary hover:bg-blue-600 text-white font-bold py-4 rounded-lg transition-all transform hover:scale-[1.02] shadow-md disabled:opacity-50 disabled:cursor-not-allowed disabled:transform-none"
                             >
-                                {t("contact.submit")}
+                                {isSubmitting ? "Sending..." : t("contact.submit")}
                             </button>
                         </form>
                     </div>

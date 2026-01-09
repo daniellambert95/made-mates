@@ -102,6 +102,44 @@ export default function AboutPage() {
                 </div>
             </section>
 
+            {/* Our Mission */}
+            <section className="py-24 bg-gray-50">
+                <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                    <div className="text-center max-w-4xl mx-auto">
+                        <h2 className="text-3xl md:text-4xl font-bold text-primary mb-4">
+                            {t("about.page.mission")}
+                        </h2>
+                        <div className="w-20 h-1 bg-secondary mx-auto rounded-full mb-8"></div>
+                        <p className="text-2xl md:text-3xl font-semibold text-primary italic">
+                            {t("about.page.mission.desc")}
+                        </p>
+                    </div>
+                </div>
+            </section>
+
+            {/* What We Do */}
+            <section className="py-24 bg-white">
+                <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                    <div className="max-w-5xl mx-auto">
+                        <h2 className="text-3xl md:text-4xl font-bold text-primary mb-4 text-center">
+                            {t("about.page.whatwedo")}
+                        </h2>
+                        <div className="w-20 h-1 bg-secondary mx-auto rounded-full mb-12"></div>
+                        <div className="space-y-8">
+                            <p className="text-lg text-gray-700 leading-relaxed">
+                                {t("about.page.whatwedo.p1")}
+                            </p>
+                            <p className="text-lg text-gray-700 leading-relaxed">
+                                {t("about.page.whatwedo.p2")}
+                            </p>
+                            <p className="text-lg text-gray-700 leading-relaxed">
+                                {t("about.page.whatwedo.p3")}
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
             {/* Our Values */}
             <section className="py-24 bg-gray-50">
                 <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">

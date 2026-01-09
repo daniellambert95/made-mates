@@ -18,13 +18,13 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "MADE mates Holding GmbH | Diverse Portfolio Across 6 Industries",
-  description: "MADE mates Holding GmbH drives growth across fashion, healthcare, toys, pet care, electronics, and energy sectors. Your trusted B2B partner in Berlin, Germany.",
+  title: "MADE mates | Diverse Portfolio Across 6 Industries",
+  description: "MADE mates drives growth across fashion, healthcare, toys, pet care, electronics, and energy sectors. Your trusted B2B partner in Berlin, Germany.",
   keywords: ["B2B", "holding company", "fashion", "healthcare", "toys", "pet products", "electronics", "energy", "Berlin", "Germany", "MADE mates"],
-  authors: [{ name: "MADE mates Holding GmbH" }],
+  authors: [{ name: "MADE mates" }],
   openGraph: {
-    title: "MADE mates Holding GmbH | Diverse Portfolio Across 6 Industries",
-    description: "MADE mates Holding GmbH drives growth across fashion, healthcare, toys, pet care, electronics, and energy sectors.",
+    title: "MADE mates | Diverse Portfolio Across 6 Industries",
+    description: "MADE mates drives growth across fashion, healthcare, toys, pet care, electronics, and energy sectors.",
     url: "https://mademates.com",
     siteName: "MADE mates Holding",
     locale: "en_US",
@@ -32,7 +32,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "MADE mates Holding GmbH | Diverse Portfolio Across 6 Industries",
+    title: "MADE mates | Diverse Portfolio Across 6 Industries",
     description: "Your trusted B2B partner across 6 industries",
   },
   robots: {

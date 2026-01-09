@@ -21,7 +21,7 @@ const translations: Translations = {
 
         // Hero
         "hero.tagline": "Innovating for a Diverse Future",
-        "hero.intro": "MADE mates Holding GmbH drives growth across fashion, healthcare, toys, pet care, electronics, and energy sectors, with solutions extending beyond these markets.",
+        "hero.intro": "MADE mates drives growth across fashion, healthcare, toys, pet care, electronics, and energy sectors, with solutions extending beyond these markets.",
         "hero.cta.explore": "Explore Our Operations",
         "hero.cta.contact": "Contact Us",
 
@@ -97,7 +97,7 @@ const translations: Translations = {
 
         // Home CTA
         "home.cta.title": "Ready to Explore Our Operations?",
-        "home.cta.subtitle": "Discover how MADE mates Holding can be your trusted partner across diverse industries.",
+        "home.cta.subtitle": "Discover how MADE mates can be your trusted partner across diverse industries.",
         "home.cta.contact": "Get in Touch",
         "home.cta.learn": "Learn More",
 
@@ -220,7 +220,7 @@ const translations: Translations = {
 
         // Hero
         "hero.tagline": "Innovation für eine vielfältige Zukunft",
-        "hero.intro": "MADE mates Holding GmbH fördert Wachstum in den Bereichen Mode, Gesundheitswesen, Spielwaren, Heimtierbedarf, Elektronik und Energie, mit Lösungen, die über diese Märkte hinausgehen.",
+        "hero.intro": "MADE mates fördert Wachstum in den Bereichen Mode, Gesundheitswesen, Spielwaren, Heimtierbedarf, Elektronik und Energie, mit Lösungen, die über diese Märkte hinausgehen.",
         "hero.cta.explore": "Unsere Bereiche",
         "hero.cta.contact": "Kontaktieren Sie uns",
 
@@ -296,7 +296,7 @@ const translations: Translations = {
 
         // Home CTA
         "home.cta.title": "Bereit, unsere Geschäftsbereiche zu erkunden?",
-        "home.cta.subtitle": "Entdecken Sie, wie MADE mates Holding Ihr vertrauenswürdiger Partner in verschiedenen Branchen werden kann.",
+        "home.cta.subtitle": "Entdecken Sie, wie MADE mates Ihr vertrauenswürdiger Partner in verschiedenen Branchen werden kann.",
         "home.cta.contact": "Kontakt aufnehmen",
         "home.cta.learn": "Mehr erfahren",
 

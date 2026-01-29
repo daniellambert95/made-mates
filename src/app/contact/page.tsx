@@ -213,7 +213,7 @@ export default function ContactPage() {
                                     </div>
                                 </div>
 
-                                <div className="flex items-start space-x-4">
+                                {/* <div className="flex items-start space-x-4">
                                     <Phone className="w-6 h-6 text-secondary mt-1 flex-shrink-0" />
                                     <div>
                                         <p className="font-semibold text-lg text-gray-900 mb-1">{t("contact.phone")}</p>
@@ -221,7 +221,7 @@ export default function ContactPage() {
                                             +49 30 123456789
                                         </a>
                                     </div>
-                                </div>
+                                </div> */}
                             </div>
 
                             {/* Map */}

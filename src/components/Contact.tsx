@@ -72,13 +72,13 @@ export default function Contact() {
                                 </div>
                             </div>
 
-                            <div className="flex items-start space-x-4">
+                            {/* <div className="flex items-start space-x-4">
                                 <Phone className="w-6 h-6 text-secondary mt-1" />
                                 <div>
                                     <p className="font-semibold text-lg mb-1">{t("contact.phone")}</p>
                                     <p className="text-gray-300">+49 30 123456789</p>
                                 </div>
-                            </div>
+                            </div> */}
                         </div>
 
                         {/* Map Placeholder */}

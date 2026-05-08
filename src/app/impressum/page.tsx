@@ -80,7 +80,7 @@ export default function ImpressumPage() {
                                 <p>
                                     <span className="font-medium">{t("impressum.registerEntry")}:</span>
                                 </p>
-                                <p className="text-gray-600 italic">Registration details available upon request</p>
+                                <p>HRB 230312, Amtsgericht Hannover</p>
                             </div>
                         </section>
 

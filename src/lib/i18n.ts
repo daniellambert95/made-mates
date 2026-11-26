@@ -141,8 +141,6 @@ const translations: Translations = {
         // Impressum
         "impressum.title": "Imprint",
         "impressum.back": "← Back to Homepage",
-        "impressum.constructionNotice": "Website Under Construction",
-        "impressum.constructionText": "This website is currently being developed and will be fully operational by the end of June 2026. All contact information provided below remains valid and can be used for inquiries.",
         "impressum.section1": "Information in accordance with § 5 DDG",
         "impressum.contact": "Contact",
         "impressum.email": "E-mail",
@@ -354,8 +352,6 @@ const translations: Translations = {
         // Impressum
         "impressum.title": "Impressum",
         "impressum.back": "← Zurück zur Startseite",
-        "impressum.constructionNotice": "Website im Aufbau",
-        "impressum.constructionText": "Diese Website befindet sich derzeit im Aufbau und wird bis Ende Juni 2026 vollständig fertiggestellt sein. Alle unten angegebenen Kontaktinformationen sind gültig und können für Anfragen genutzt werden.",
         "impressum.section1": "Angaben gemäß § 5 DDG",
         "impressum.contact": "Kontakt",
         "impressum.email": "E-Mail",

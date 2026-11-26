@@ -224,18 +224,16 @@ export default function ContactPage() {
                                 </div> */}
                             </div>
 
-                            {/* Map */}
-                            <div className="h-80 bg-gray-200 rounded-2xl overflow-hidden shadow-lg">
-                                <iframe
-                                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2427.632770513513!2d13.38692637697693!3d52.51650663606626!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47a851c4d4d8b0a1%3A0x400c40e7a75c1c0!2sFriedrichstra%C3%9Fe%20171%2C%2010117%20Berlin!5e0!3m2!1sen!2sde!4v1709647200000!5m2!1sen!2sde"
-                                    width="100%"
-                                    height="100%"
-                                    style={{ border: 0 }}
-                                    allowFullScreen
-                                    loading="lazy"
-                                    referrerPolicy="no-referrer-when-downgrade"
-                                ></iframe>
-                            </div>
+                            {/* Link to Google Maps (no embed — avoids third-party requests without consent) */}
+                            <a
+                                href="https://www.google.com/maps/search/?api=1&query=Friedrichstra%C3%9Fe+171%2C+10117+Berlin"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                className="inline-flex items-center gap-2 text-secondary hover:text-primary transition-colors font-medium"
+                            >
+                                <MapPin className="w-5 h-5" />
+                                {t("contact.viewOnMaps")}
+                            </a>
                         </div>
                     </div>
                 </div>

@@ -81,6 +81,9 @@ export default function ImpressumPage() {
                                     <span className="font-medium">{t("impressum.registerEntry")}:</span>
                                 </p>
                                 <p>HRB 230312, Amtsgericht Hannover</p>
+                                <p>
+                                    <span className="font-medium">{t("impressum.seat")}:</span> Hannover
+                                </p>
                             </div>
                         </section>
 
@@ -92,28 +95,7 @@ export default function ImpressumPage() {
                                 <p>
                                     {t("impressum.vatText")}:
                                 </p>
-                                <p className="text-gray-600 italic">Available upon request</p>
-                            </div>
-                        </section>
-
-                        <section className="mb-8">
-                            <h2 className="text-2xl font-semibold text-primary mb-4">
-                                {t("impressum.euDispute")}
-                            </h2>
-                            <div className="space-y-3 text-gray-700">
-                                <p>
-                                    {t("impressum.euDisputeText")}:{" "}
-                                    <a
-                                        href="https://ec.europa.eu/consumers/odr/"
-                                        target="_blank"
-                                        rel="noopener noreferrer"
-                                        className="text-secondary hover:underline"
-                                    >
-                                        https://ec.europa.eu/consumers/odr/
-                                    </a>
-                                    .
-                                </p>
-                                <p>{t("impressum.euDisputeEmail")}</p>
+                                <p>DE465599597</p>
                             </div>
                         </section>
 

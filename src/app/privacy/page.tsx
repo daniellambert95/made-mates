@@ -155,6 +155,47 @@ export default function PrivacyPage() {
                                 {t("privacy.section6")}
                             </h2>
                             <div className="space-y-4 text-gray-700">
+                                <h3 className="text-xl font-semibold text-primary mt-6 mb-3">
+                                    {t("privacy.mapsProvider")}
+                                </h3>
+                                <p dangerouslySetInnerHTML={{ __html: t("privacy.mapsProviderText") }} />
+
+                                <h3 className="text-xl font-semibold text-primary mt-6 mb-3">
+                                    {t("privacy.mapsConsent")}
+                                </h3>
+                                <p>
+                                    {t("privacy.mapsConsentText")}
+                                </p>
+
+                                <h3 className="text-xl font-semibold text-primary mt-6 mb-3">
+                                    {t("privacy.mapsLegalBasis")}
+                                </h3>
+                                <p>
+                                    {t("privacy.mapsLegalBasisText")}
+                                </p>
+
+                                <h3 className="text-xl font-semibold text-primary mt-6 mb-3">
+                                    {t("privacy.mapsTransfer")}
+                                </h3>
+                                <p>
+                                    {t("privacy.mapsTransferText")}{" "}
+                                    <a
+                                        href="https://policies.google.com/privacy"
+                                        target="_blank"
+                                        rel="noopener noreferrer"
+                                        className="text-secondary hover:underline"
+                                    >
+                                        https://policies.google.com/privacy
+                                    </a>
+                                </p>
+                            </div>
+                        </section>
+
+                        <section className="mb-8">
+                            <h2 className="text-2xl font-semibold text-primary mb-4">
+                                {t("privacy.section7")}
+                            </h2>
+                            <div className="space-y-4 text-gray-700">
                                 <p>
                                     {t("privacy.rightsText")}
                                 </p>
@@ -198,7 +239,7 @@ export default function PrivacyPage() {
 
                         <section className="mb-8">
                             <h2 className="text-2xl font-semibold text-primary mb-4">
-                                {t("privacy.section7")}
+                                {t("privacy.section8")}
                             </h2>
                             <div className="space-y-4 text-gray-700">
                                 <p>

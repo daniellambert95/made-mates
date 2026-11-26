@@ -57,9 +57,9 @@ export default function Footer() {
 
                     {/* Quick Links */}
                     <div>
-                        <h4 className="text-lg font-bold mb-6 border-b border-gray-700 pb-2 inline-block">
+                        <h2 className="text-lg font-bold mb-6 border-b border-gray-700 pb-2 inline-block">
                             {t("nav.home")}
-                        </h4>
+                        </h2>
                         <ul className="space-y-3">
                             <li>
                                 <Link href="/about" className="text-gray-300 hover:text-secondary transition-colors">
@@ -86,9 +86,9 @@ export default function Footer() {
 
                     {/* Operations */}
                     <div>
-                        <h4 className="text-lg font-bold mb-6 border-b border-gray-700 pb-2 inline-block">
+                        <h2 className="text-lg font-bold mb-6 border-b border-gray-700 pb-2 inline-block">
                             {t("nav.operations")}
-                        </h4>
+                        </h2>
                         <ul className="space-y-3">
                             <li><span className="text-gray-300">MADE mates Fashion</span></li>
                             <li><span className="text-gray-300">MADE mates Healthcare</span></li>
@@ -101,9 +101,9 @@ export default function Footer() {
 
                     {/* Contact */}
                     <div>
-                        <h4 className="text-lg font-bold mb-6 border-b border-gray-700 pb-2 inline-block">
+                        <h2 className="text-lg font-bold mb-6 border-b border-gray-700 pb-2 inline-block">
                             {t("nav.contact")}
-                        </h4>
+                        </h2>
                         <address className="not-italic text-gray-300 space-y-3">
                             <p>MADE mates Holding GmbH</p>
                             <p>Friedrichstraße 171</p>
@@ -142,7 +142,7 @@ export default function Footer() {
                         >
                             Webdesign by <span className="font-semibold">Site&Sight</span>
                         </a>
-                        <p className="text-gray-500 text-sm">
+                        <p className="text-gray-300 text-sm">
                             {t("footer.tagline")}
                         </p>
                     </div>

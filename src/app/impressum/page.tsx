@@ -81,6 +81,9 @@ export default function ImpressumPage() {
                                     <span className="font-medium">{t("impressum.registerEntry")}:</span>
                                 </p>
                                 <p>HRB 230312, Amtsgericht Hannover</p>
+                                <p>
+                                    <span className="font-medium">{t("impressum.seat")}:</span> Hannover
+                                </p>
                             </div>
                         </section>
 
@@ -92,7 +95,7 @@ export default function ImpressumPage() {
                                 <p>
                                     {t("impressum.vatText")}:
                                 </p>
-                                <p className="text-gray-600 italic">Available upon request</p>
+                                <p>DE465599597</p>
                             </div>
                         </section>
 

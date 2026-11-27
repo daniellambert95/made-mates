@@ -98,8 +98,9 @@ export default function PrivacyPage() {
                                     {t("privacy.recipients")}
                                 </h3>
                                 <p>
-                                    {t("privacy.recipientsText")}{" "}
-                                    <span className="font-medium">standard email infrastructure</span>{" "}
+                                    {t("privacy.recipientsText")}
+                                </p>
+                                <p>
                                     {t("privacy.recipientsText2")}
                                 </p>
 
@@ -123,8 +124,18 @@ export default function PrivacyPage() {
                                 <p>
                                     {t("privacy.hostingText1")}
                                 </p>
-                                Site & Sight
-                                <p className="font-medium">www.siteandsight.com</p>
+                                <p>
+                                    <span className="font-medium">Site &amp; Sight</span>
+                                    <br />
+                                    <a
+                                        href="https://www.siteandsight.com"
+                                        target="_blank"
+                                        rel="noopener noreferrer"
+                                        className="text-secondary hover:underline"
+                                    >
+                                        www.siteandsight.com
+                                    </a>
+                                </p>
                                 <p>
                                     {t("privacy.hostingText2")}
                                 </p>

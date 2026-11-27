@@ -3,6 +3,7 @@
 import { useI18n } from "@/lib/i18n";
 import { MapPin, Mail, Phone } from "lucide-react";
 import { useState } from "react";
+import Link from "next/link";
 
 export default function Contact() {
     const { t } = useI18n();
@@ -206,6 +207,16 @@ export default function Contact() {
                             >
                                 {isSubmitting ? "Sending..." : t("contact.submit")}
                             </button>
+
+                            <div className="pt-2 space-y-2 text-sm text-gray-600 border-t border-gray-100 mt-6">
+                                <p className="pt-4">{t("contact.requiredNote")}</p>
+                                <p>{t("contact.privacyNotice")}</p>
+                                <p>
+                                    <Link href="/privacy" className="text-secondary hover:underline">
+                                        {t("contact.privacyLink")}
+                                    </Link>
+                                </p>
+                            </div>
                         </form>
                     </div>
                 </div>

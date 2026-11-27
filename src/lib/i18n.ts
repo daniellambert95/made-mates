@@ -124,6 +124,9 @@ const translations: Translations = {
         "contact.address": "Address",
         "contact.all_ops": "All Operations",
         "contact.viewOnMaps": "View on Google Maps",
+        "contact.requiredNote": "* Required field",
+        "contact.privacyNotice": "The legal basis for processing is, depending on the content, the potential pre-contractual measure or the legitimate interest in processing the transmitted information in structured form for the purpose of handling your enquiry by MADE mates Holding GmbH.",
+        "contact.privacyLink": "View our Privacy Policy",
 
         // Footer
         "footer.rights": "All rights reserved.",
@@ -132,11 +135,6 @@ const translations: Translations = {
         "footer.privacy": "Privacy Policy",
 
         // Cookie Banner
-        "cookie.title": "Cookie Notice",
-        "cookie.message": "This website uses <strong>no tracking cookies</strong> or analytics tools. We only use essential cookies required for the contact form functionality. These cookies do not store any personal data.",
-        "cookie.privacy": "For more information, see our",
-        "cookie.privacyLink": "Privacy Policy",
-        "cookie.accept": "Got it",
 
         // Impressum
         "impressum.title": "Imprint",
@@ -195,19 +193,10 @@ const translations: Translations = {
         "privacy.hostingText2": "Details about this provider and the processing of your data can be found in the hosting provider's privacy policy.",
         "privacy.section5": "5. Cookies and Tracking",
         "privacy.noTracking": "No Tracking Cookies",
-        "privacy.noTrackingText": "This website uses <strong>no tracking cookies</strong> or analytics tools like Google Analytics. We do not track your user behavior and do not create user profiles. Please note the information on external links in section 6.",
-        "privacy.essential": "Essential Cookies",
-        "privacy.essentialText": "We only use technically necessary cookies that are required for the functionality of the contact form. These cookies do not store any personal data and are automatically deleted after your session.",
-        "privacy.section6": "6. External Links (Google Maps)",
-        "privacy.mapsProvider": "No Map Embedding",
-        "privacy.mapsProviderText": "This website does <strong>not</strong> embed Google Maps or any other map service. No map is loaded when you visit our pages, and no data is transmitted to Google by simply viewing this website.",
-        "privacy.mapsConsent": "Link to Google Maps",
-        "privacy.mapsConsentText": "On our contact page we provide a simple link to Google Maps so you can look up our location if you wish. Data is only transmitted to Google if you actively click this link and thereby leave our website. In that case, the provider is Google Ireland Limited, Gordon House, Barrow Street, Dublin 4, Ireland, and your IP address and further technical data may be transferred to servers of Google LLC in the USA.",
-        "privacy.mapsLegalBasis": "Your Decision",
-        "privacy.mapsLegalBasisText": "Whether you follow this link is entirely your decision. We have no influence on the data processing carried out by Google once you have left our website, and we do not receive any information about whether you have used the link.",
-        "privacy.mapsTransfer": "Further Information",
-        "privacy.mapsTransferText": "Details on how Google handles user data can be found in Google's privacy policy:",
-        "privacy.section7": "7. Your Rights",
+        "privacy.noTrackingText": "This website uses <strong>no tracking cookies</strong> or analytics tools like Google Analytics. We do not track your user behavior and do not create user profiles.",
+        "privacy.essential": "No Cookies",
+        "privacy.essentialText": "This website does not set any cookies. Your browser\u2019s local storage is likewise not used to store personal data.",
+        "privacy.section6": "6. Your Rights",
         "privacy.rightsText": "You have the right at any time, within the framework of applicable legal provisions, to receive information free of charge about your stored personal data, its origin and recipients, and the purpose of data processing, and if applicable, a right to correction or deletion of this data.",
         "privacy.rightInfo": "Right to Information",
         "privacy.rightInfoText": "You have the right to request information about your personal data processed by us.",
@@ -219,7 +208,7 @@ const translations: Translations = {
         "privacy.rightCorrectionText": "You have the right to request the correction of incorrect or completion of your personal data stored with us.",
         "privacy.rightComplaint": "Right to Lodge a Complaint with the Competent Supervisory Authority",
         "privacy.rightComplaintText": "In the event of violations of the GDPR, data subjects have the right to lodge a complaint with a supervisory authority, in particular in the member state of their habitual residence, their place of work, or the place of the alleged violation. The right to lodge a complaint is without prejudice to other administrative or judicial remedies.",
-        "privacy.section8": "8. Contact",
+        "privacy.section7": "7. Contact",
         "privacy.contactTitle": "For questions about data protection or to exercise your rights, you can contact us at any time:",
     },
     de: {
@@ -335,6 +324,9 @@ const translations: Translations = {
         "contact.address": "Adresse",
         "contact.all_ops": "Alle Bereiche",
         "contact.viewOnMaps": "Auf Google Maps ansehen",
+        "contact.requiredNote": "* Pflichtfeld",
+        "contact.privacyNotice": "Die Rechtsgrundlage der Verarbeitung ist je nach Inhalt die mögliche vorvertragliche Maßnahme oder das berechtigte Interesse der Verarbeitung der übermittelten Informationen in formatierter Form zum Zweck der Bearbeitung durch die MADE mates Holding GmbH.",
+        "contact.privacyLink": "Zu den Datenschutzhinweisen",
 
         // Footer
         "footer.rights": "Alle Rechte vorbehalten.",
@@ -343,11 +335,6 @@ const translations: Translations = {
         "footer.privacy": "Datenschutz",
 
         // Cookie Banner
-        "cookie.title": "Hinweis zu Cookies",
-        "cookie.message": "Diese Website verwendet <strong>keine Tracking-Cookies</strong> oder Analyse-Tools. Wir verwenden ausschließlich technisch notwendige Cookies für die Funktionalität des Kontaktformulars. Diese Cookies speichern keine personenbezogenen Daten.",
-        "cookie.privacy": "Weitere Informationen finden Sie in unserer",
-        "cookie.privacyLink": "Datenschutzerklärung",
-        "cookie.accept": "Verstanden",
 
         // Impressum
         "impressum.title": "Impressum",
@@ -406,19 +393,10 @@ const translations: Translations = {
         "privacy.hostingText2": "Details zu diesem Anbieter und zur Verarbeitung Ihrer Daten können Sie der Datenschutzerklärung des Hosting-Anbieters entnehmen.",
         "privacy.section5": "5. Cookies und Tracking",
         "privacy.noTracking": "Keine Tracking-Cookies",
-        "privacy.noTrackingText": "Diese Website verwendet <strong>keine Tracking-Cookies</strong> oder Analyse-Tools wie Google Analytics. Wir tracken Ihr Nutzerverhalten nicht und erstellen keine Nutzerprofile. Bitte beachten Sie die Hinweise zu externen Links in Abschnitt 6.",
-        "privacy.essential": "Essentielle Cookies",
-        "privacy.essentialText": "Wir verwenden ausschließlich technisch notwendige Cookies, die für die Funktionsfähigkeit des Kontaktformulars erforderlich sind. Diese Cookies speichern keine personenbezogenen Daten und werden nach Ihrer Sitzung automatisch gelöscht.",
-        "privacy.section6": "6. Externe Links (Google Maps)",
-        "privacy.mapsProvider": "Keine Karteneinbindung",
-        "privacy.mapsProviderText": "Diese Website bindet <strong>keine</strong> Google Maps-Karte oder einen anderen Kartendienst ein. Beim Besuch unserer Seiten wird keine Karte geladen und es werden allein durch den Aufruf dieser Website keine Daten an Google übermittelt.",
-        "privacy.mapsConsent": "Link zu Google Maps",
-        "privacy.mapsConsentText": "Auf unserer Kontaktseite stellen wir lediglich einen Link zu Google Maps bereit, über den Sie unseren Standort bei Bedarf nachschlagen können. Eine Datenübermittlung an Google findet erst statt, wenn Sie diesen Link aktiv anklicken und damit unsere Website verlassen. In diesem Fall ist Anbieter die Google Ireland Limited, Gordon House, Barrow Street, Dublin 4, Irland, und Ihre IP-Adresse sowie weitere technische Daten können an Server der Google LLC in den USA übertragen werden.",
-        "privacy.mapsLegalBasis": "Ihre Entscheidung",
-        "privacy.mapsLegalBasisText": "Ob Sie diesem Link folgen, liegt allein in Ihrer Entscheidung. Auf die Datenverarbeitung durch Google nach dem Verlassen unserer Website haben wir keinen Einfluss, und wir erhalten keine Information darüber, ob Sie den Link genutzt haben.",
-        "privacy.mapsTransfer": "Weitere Informationen",
-        "privacy.mapsTransferText": "Einzelheiten zum Umgang mit Nutzerdaten finden Sie in der Datenschutzerklärung von Google:",
-        "privacy.section7": "7. Ihre Rechte",
+        "privacy.noTrackingText": "Diese Website verwendet <strong>keine Tracking-Cookies</strong> oder Analyse-Tools wie Google Analytics. Wir tracken Ihr Nutzerverhalten nicht und erstellen keine Nutzerprofile.",
+        "privacy.essential": "Keine Cookies",
+        "privacy.essentialText": "Diese Website setzt keine Cookies. Auch der lokale Speicher Ihres Browsers wird nicht zur Speicherung personenbezogener Daten genutzt.",
+        "privacy.section6": "6. Ihre Rechte",
         "privacy.rightsText": "Sie haben im Rahmen der geltenden gesetzlichen Bestimmungen jederzeit das Recht auf unentgeltliche Auskunft über Ihre gespeicherten personenbezogenen Daten, deren Herkunft und Empfänger und den Zweck der Datenverarbeitung und ggf. ein Recht auf Berichtigung oder Löschung dieser Daten.",
         "privacy.rightInfo": "Auskunftsrecht",
         "privacy.rightInfoText": "Sie haben das Recht, Auskunft über Ihre von uns verarbeiteten personenbezogenen Daten zu verlangen.",
@@ -430,7 +408,7 @@ const translations: Translations = {
         "privacy.rightCorrectionText": "Sie haben das Recht, die Berichtigung unrichtiger oder die Vervollständigung Ihrer bei uns gespeicherten personenbezogenen Daten zu verlangen.",
         "privacy.rightComplaint": "Beschwerderecht bei der zuständigen Aufsichtsbehörde",
         "privacy.rightComplaintText": "Im Falle von Verstößen gegen die DSGVO steht den Betroffenen ein Beschwerderecht bei einer Aufsichtsbehörde, insbesondere in dem Mitgliedstaat ihres gewöhnlichen Aufenthalts, ihres Arbeitsplatzes oder des Orts des mutmaßlichen Verstoßes zu. Das Beschwerderecht besteht unbeschadet anderweitiger verwaltungsrechtlicher oder gerichtlicher Rechtsbehelfe.",
-        "privacy.section8": "8. Kontakt",
+        "privacy.section7": "7. Kontakt",
         "privacy.contactTitle": "Für Fragen zum Datenschutz oder zur Ausübung Ihrer Rechte können Sie uns jederzeit kontaktieren:",
     },
 };

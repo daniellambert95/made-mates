@@ -4,7 +4,6 @@ import "./globals.css";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import StructuredData from "@/components/StructuredData";
-import CookieBanner from "@/components/CookieBanner";
 import HtmlLangWrapper from "@/components/HtmlLangWrapper";
 
 const geistSans = Geist({
@@ -58,7 +57,6 @@ export default function RootLayout({
           <main className="flex-grow">{children}</main>
         </div>
         <Footer />
-        <CookieBanner />
       </body>
     </html>
   );
